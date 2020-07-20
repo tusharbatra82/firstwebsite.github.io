@@ -20,10 +20,10 @@ $num = mysqli_num_rows($result);
 if($num == 1)
 {
   $_SESSION['username']= $name;
-  header('location:index.html');
+  header('location:target.php');
 }
 else {
-  header('location:index.html');
+  header('location:target.php');
 }
 
  ?>
