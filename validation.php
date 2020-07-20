@@ -9,21 +9,21 @@ if($con){
   echo "no connection";
 }
 
-mysqli_select_db($con,'sessionpracticali');
+mysqli_select_db($con,'sessionpracticalii');
 
 $name = $_POST['user'];
 $pass = $_POST['Password'];
 
-$q= "select * from signin where name='$name' && password='$pass'";
+$q= "select * from signini where name='$name' && password='$pass'";
 $result=mysqli_query($con , $q);
 $num = mysqli_num_rows($result);
 if($num == 1)
 {
   $_SESSION['username']= $name;
-  header('location:index.php');
+  header('location:index.html');
 }
 else {
-  header('location:LOGIN.php');
+  header('location:index.html');
 }
 
  ?>
